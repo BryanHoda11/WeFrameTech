@@ -26,9 +26,9 @@ export default function RootLayout({
       <body className={`${inter.variable} ${dm_sans.variable} antialiased`}>
         <div className="main-container flex items-start">
           <Sidebar />
-          {/* <div> */}
+          <div className="w-full overflow-hidden">
             {children}
-          {/* </div> */}
+          </div>
         </div>
       </body>
     </html>
