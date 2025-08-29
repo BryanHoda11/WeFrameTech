@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import type { Metadata } from "next";
 import Cards from "@/components/Cards";
+import Table from "@/components/Table";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <div className="content-container px-4 py-4">
         <Cards />
+        <Table />
       </div>
     </>
   );

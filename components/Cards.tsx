@@ -9,8 +9,8 @@ import { IoMdTrendingUp } from "react-icons/io";
 const Cards = () => {
     return (
         <>
-            <div className="flex justify-center items-center gap-6">
-                <Card className="min-w-[340px] h-full w-full flex flex-col gap-6">
+            <div className="flex justify-center items-end gap-6">
+                <Card className="min-w-[340px] border border-[#EAECF0] h-full w-full flex flex-col gap-6">
                     <CardHeader>
                         <CardTitle className="text-center">Account Progress</CardTitle>
                     </CardHeader>
@@ -95,7 +95,7 @@ const Cards = () => {
                 </Card>
 
                 <div className="flex flex-col gap-5 w-full">
-                    <Card className="min-w-[200px] flex flex-col">
+                    <Card className="min-w-[200px] border border-[#EAECF0] flex flex-col">
                         <CardHeader>
                             <CardTitle>Total Franchisees Onboard</CardTitle>
                         </CardHeader>
@@ -140,7 +140,7 @@ const Cards = () => {
                         </CardContent>
                     </Card>
 
-                    <Card className="min-w-[200px] flex flex-col gap-6">
+                    <Card className="min-w-[200px] border border-[#EAECF0] flex flex-col gap-6">
                         <CardHeader>
                             <CardTitle>Financial Wellbeing</CardTitle>
                         </CardHeader>
@@ -171,7 +171,7 @@ const Cards = () => {
                 </div>
 
                 <div className="flex flex-col gap-5 w-full">
-                    <Card className="min-w-[200px] h-full flex flex-col">
+                    <Card className="min-w-[200px] border border-[#EAECF0] h-full flex flex-col">
                         <CardHeader>
                             <CardTitle>Key Insights & Feedback</CardTitle>
                         </CardHeader>
@@ -197,7 +197,7 @@ const Cards = () => {
                         </CardContent>
                     </Card>
 
-                    <Card className="min-w-[200px] h-full flex flex-col">
+                    <Card className="min-w-[200px] border border-[#EAECF0] h-full flex flex-col">
                         <CardHeader>
                             <CardTitle>Prospect Leads</CardTitle>
                         </CardHeader>
