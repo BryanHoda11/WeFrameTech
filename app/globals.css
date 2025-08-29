@@ -124,3 +124,7 @@
 .sidebar {
   font-family: var(--font-dmsans), sans-serif;
 }
+
+.content-container {
+  font-family: var(--font-inter), sans-serif;
+}
