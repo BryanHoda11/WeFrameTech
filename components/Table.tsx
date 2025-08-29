@@ -91,7 +91,7 @@ export default function Table() {
             <div className="border-b border-[#EAECF0] px-6 py-4 flex items-center w-full justify-between">
                 <div className="flex flex-col gap-1">
                     <h2 className="text-lg font-semibold">My Uploads</h2>
-                    <p className="text-sm text-gray-500">Documents that are uploaded by you.</p>
+                    <p className="text-sm max-sm:hidden text-gray-500">Documents that are uploaded by you.</p>
                 </div>
                 <HiOutlineDotsVertical size={20} />
             </div>
@@ -109,11 +109,11 @@ export default function Table() {
                             <th className="px-3 py-3 text-left align-middle">
                                 <Checkbox />
                             </th>
-                            <th className="px-3 py-3 text-left font-medium text-gray-700">Document Name</th>
-                            <th className="px-3 py-3 text-left font-medium text-gray-700">Document Type</th>
+                            <th className="px-3 py-3 text-center font-medium text-gray-700">Document Name</th>
+                            <th className="px-3 py-3 text-center font-medium text-gray-700">Document Type</th>
                             <th className="px-3 py-3 text-center font-medium text-gray-700">AI App Inclusion</th>
                             <th className="px-3 py-3 text-center font-medium text-gray-700">Dashboard Inclusion</th>
-                            <th className="px-3 py-3 text-left font-medium text-gray-700">Stage Access</th>
+                            <th className="px-3 py-3 text-center font-medium text-gray-700">Stage Access</th>
                             <th className="px-3 py-3 text-center font-medium text-gray-700"></th>
                         </tr>
                     </thead>
@@ -124,9 +124,9 @@ export default function Table() {
                                     <Checkbox />
                                 </td>
                                 <td className="px-3 py-3 flex items-center gap-2 align-middle">
-                                    {doc.icon}
+                                    <span className="max-sm:hidden">{doc.icon}</span>
                                     <div className="flex flex-col">
-                                        <div className="font-medium cursor-pointer hover:underline">{doc.name}</div>
+                                        <div className="font-medium max-sm:text-xs cursor-pointer hover:underline">{doc.name}</div>
                                         <div className="text-xs text-[#475467]">{doc.size}</div>
                                     </div>
                                 </td>
@@ -157,8 +157,8 @@ export default function Table() {
                                 </td>
                                 <td className="px-3 py-3 text-center align-middle">
                                     <div className="flex gap-2 justify-center">
-                                        <button className="text-[#475467] cursor-pointer hover:underline text-sm font-medium">Delete</button>
-                                        <button className="text-[#279DD4] cursor-pointer hover:underline text-sm font-medium">Edit</button>
+                                        <p className="text-[#475467] cursor-pointer hover:underline text-sm font-medium">Delete</p>
+                                        <p className="text-[#279DD4] cursor-pointer hover:underline text-sm font-medium">Edit</p>
                                     </div>
                                 </td>
                             </tr>

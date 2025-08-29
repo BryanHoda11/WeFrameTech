@@ -6,7 +6,7 @@ import Link from "next/link"
 const Sidebar = () => {
   return (
     <>
-      <div className="sidebar bg-[#11455D] text-white h-screen w-[18%] flex flex-col gap-2 px-4 py-4">
+      <div className="sidebar bg-[#11455D] text-white h-screen w-[25%] hidden xl:flex flex-col gap-2 px-4 py-4">
         <Link href='/'> <div className="logo"><Image width={146} height={72} src="/images/Logo.svg" alt="logo" /></div> </Link>
 
         <ul className='flex flex-col gap-2 py-4'>

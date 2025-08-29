@@ -6,10 +6,14 @@ import Table from "@/components/Table";
 export default function Home() {
   return (
     <>
-      <Header />
-      <div className="content-container px-4 py-4">
-        <Cards />
-        <Table />
+      <div className="h-screen overflow-y-scroll">
+        <Header />
+
+        <div className="content-container sm:px-4 py-4">
+          <Cards />
+          <Table />
+        </div>
+
       </div>
     </>
   );

@@ -9,7 +9,7 @@ import { IoMdTrendingUp } from "react-icons/io";
 const Cards = () => {
     return (
         <>
-            <div className="flex justify-center items-end gap-6">
+            <div className="flex max-xl:flex-wrap justify-center items-end gap-6">
                 <Card className="min-w-[340px] border border-[#EAECF0] h-full w-full flex flex-col gap-6">
                     <CardHeader>
                         <CardTitle className="text-center">Account Progress</CardTitle>
